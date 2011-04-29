@@ -11,6 +11,9 @@
     <resource>src/test/cpp/CalculatorTest.cpp</resource>
     <resource>src/test/cpp/main.cpp</resource>
     <resource>src/test/cpp/CMakeLists.txt</resource>
+    <resource>cmake/CPackConfigDEB.cmake</resource>
+    <resource>cmake/CPackConfigRPM.cmake</resource>
+    <resource>cmake/FindCppUnit.cmake</resource>
     <resource>CMakeLists.txt</resource>
   </resources>
   <sources>
