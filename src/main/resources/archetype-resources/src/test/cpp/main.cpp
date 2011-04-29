@@ -1,12 +1,14 @@
-#include <cppunit/extensions/TestFactoryRegistry.h>
-#include <cppunit/ui/text/TestRunner.h>
-#include <cppunit/TestResult.h>
-#include <cppunit/TestResultCollector.h>
-#include <cppunit/XmlOutputter.h>
-#include <cppunit/TextOutputter.h>
-#include <fstream>
+set( $H = '#' )
 
-#include <cstring>
+$Hinclude <cppunit/extensions/TestFactoryRegistry.h>
+$Hinclude <cppunit/ui/text/TestRunner.h>
+$Hinclude <cppunit/TestResult.h>
+$Hinclude <cppunit/TestResultCollector.h>
+$Hinclude <cppunit/XmlOutputter.h>
+$Hinclude <cppunit/TextOutputter.h>
+$Hinclude <fstream>
+
+$Hinclude <cstring>
 
 int main(int argc, char* argv[]) {
 	// Definimos las variables para recuperar los resultados

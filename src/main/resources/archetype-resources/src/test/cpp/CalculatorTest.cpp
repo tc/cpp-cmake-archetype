@@ -1,6 +1,7 @@
-#include <cppunit/extensions/HelperMacros.h>
-#include "Calculator.hpp"
-#include <cstring>
+set( $H = '#' )
+#Hinclude <cppunit/extensions/HelperMacros.h>
+#Hinclude "Calculator.hpp"
+#Hinclude <cstring>
 
 class CalculatorTest : public CppUnit::TestFixture {
 	CPPUNIT_TEST_SUITE(CalculatorTest);

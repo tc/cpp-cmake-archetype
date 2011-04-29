@@ -1,5 +1,6 @@
-#include <iostream>
-#include "Calculator.hpp"
+set( $H = '#' )
+$Hinclude <iostream>
+$Hinclude "Calculator.hpp"
 using namespace std;
 
 int main(){

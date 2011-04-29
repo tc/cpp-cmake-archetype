@@ -2,15 +2,27 @@
 <archetype-descriptor name="basic">
   <fileSets>
     <fileSet filtered="true" packaged="true" encoding="UTF-8">
-      <directory>src/main/scala</directory>
+      <directory>cmake</directory>
       <includes>
-        <include>**/*.scala</include>
+        <include>**/*.cmake</include>
       </includes>
     </fileSet>
     <fileSet filtered="true" packaged="true" encoding="UTF-8">
-      <directory>src/test/scala</directory>
+      <directory>src/main</directory>
       <includes>
+        <include>**/*.java</include>
         <include>**/*.scala</include>
+        <include>**/*.cpp</include>
+        <include>**/*.hpp</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/test</directory>
+      <includes>
+        <include>**/*.java</include>
+        <include>**/*.scala</include>
+        <include>**/*.cpp</include>
+        <include>**/*.txt</include>
       </includes>
     </fileSet>
     <fileSet filtered="true" packaged="true" encoding="UTF-8">
