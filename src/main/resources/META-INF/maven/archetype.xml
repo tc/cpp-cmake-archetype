@@ -1,0 +1,23 @@
+<archetype xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0 http://maven.apache.org/xsd/archetype-1.0.0.xsd">
+  <id>cpp-cmake</id>
+  <resources>
+    <resource>src/main/resources/log4j.properties</resource>
+    <resource>src/main/resources/config/db/database.yml</resource>
+    <resource>CMakeLists.txt</resource>
+  </resources>
+  <sources>
+    <source>src/main/scala/App.scala</source>
+    <source>src/main/scala/Config.scala</source>
+    <source>src/main/scala/work/Work.scala</source>
+    <source>src/main/cpp/Calculator.cpp</source>
+    <source>src/main/cpp/main.cpp</source>
+    <source>src/main/cpp/work/Calculator.hpp</source>
+  </sources>
+  <testSources>
+    <source>src/test/scala/work/WorkTest.scala</source>
+    <source>src/test/cpp/CalculatorTest.cpp</source>
+    <source>src/test/cpp/main.cpp</source>
+    <source>src/test/cpp/CMakeLists.txt</source>
+  </testSources>
+</archetype>

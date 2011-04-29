@@ -1,0 +1,21 @@
+Cpp Cmake app
+http://github.com/tc/cpp-cmake-archetype
+
+This archetype generates a c++ project with cppunit and cmake.
+
+Dev:
+git clone http://github.com/tc/cpp-cmake-archetype
+mvn install
+
+Run:
+mvn archetype:create -DgroupId=groupname -DartifactId=artifactname -DarchetypeArtifactId=cpp-cmake-archetype -DarchetypeGroupId=tc -DarchetypeVersion=1.0-SNAPSHOT
+
+
+Deploy:
+mvn -DaltDeploymentRepository=repo::default::file:../../tc-maven-repo/releases clean deploy
+mvn -DaltDeploymentRepository=snapshot-repo::default::file:../../tc-maven-repo/snapshots clean deploy
+
+cd ../../tc-maven-repo && git add . && git commit -m "new version of cpp cmake archetype" && git push
+
+--
+Thanks to Toni Cebrián, I used his CMake as an example. https://bitbucket.org/ancechu/cmake_sample_project/
