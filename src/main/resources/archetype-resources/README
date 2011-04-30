@@ -1,6 +1,10 @@
 Sample Project
 -
 
+SVN users:
+turn on the svnignore: svn propset svn:ignore -F .svnignore .
+
+
 C++ build:
 *only dependent is cppunit
 cmake .
