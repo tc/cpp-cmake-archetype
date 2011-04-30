@@ -1,4 +1,4 @@
-package ${package}.work
+package ${package}
 
 import org.junit.{Test, Assert}
 import scala.collection.JavaConversions._

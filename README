@@ -8,7 +8,7 @@ git clone http://github.com/tc/cpp-cmake-archetype
 mvn install
 
 Run:
-mvn archetype:create -DgroupId=groupname -DartifactId=artifactname -DarchetypeArtifactId=cpp-cmake-archetype -DarchetypeGroupId=tc -DarchetypeVersion=1.0-SNAPSHOT
+mvn archetype:generate -DgroupId=groupname -DartifactId=artifactname -Dversion=1.0-SNAPSHOT -DarchetypeArtifactId=cpp-cmake-archetype -DarchetypeGroupId=tc -DarchetypeVersion=1.0-SNAPSHOT
 
 
 Deploy:
