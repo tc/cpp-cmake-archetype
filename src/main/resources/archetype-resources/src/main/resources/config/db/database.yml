@@ -1,6 +1,6 @@
 development:
   encoding: utf8
-  database: example_data_development
+  database: ${artifactId}_development
   pool: 5
   username: root
   host: localhost
@@ -8,7 +8,7 @@ development:
 
 staging:
   encoding: utf8
-  database: example_data_staging
+  database: ${artifactId}_staging
   pool: 5
   username: root
   host: localhost
@@ -16,7 +16,7 @@ staging:
 
 test:
   encoding: utf8
-  database: example_data_test
+  database: ${artifactId}_test
   pool: 5
   username: root
   host: localhost
@@ -24,7 +24,7 @@ test:
 
 production:
   encoding: utf8
-  database: example_data_production
+  database: ${artifactId}_production
   pool: 5
   username: root
   host: localhost
