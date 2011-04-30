@@ -1,14 +1,14 @@
-set( $H = '#' )
+#set( $H = '#' )
 
-$Hinclude <cppunit/extensions/TestFactoryRegistry.h>
-$Hinclude <cppunit/ui/text/TestRunner.h>
-$Hinclude <cppunit/TestResult.h>
-$Hinclude <cppunit/TestResultCollector.h>
-$Hinclude <cppunit/XmlOutputter.h>
-$Hinclude <cppunit/TextOutputter.h>
-$Hinclude <fstream>
+${H}include <cppunit/extensions/TestFactoryRegistry.h>
+${H}include <cppunit/ui/text/TestRunner.h>
+${H}include <cppunit/TestResult.h>
+${H}include <cppunit/TestResultCollector.h>
+${H}include <cppunit/XmlOutputter.h>
+${H}include <cppunit/TextOutputter.h>
+${H}include <fstream>
 
-$Hinclude <cstring>
+${H}include <cstring>
 
 int main(int argc, char* argv[]) {
 	// Definimos las variables para recuperar los resultados

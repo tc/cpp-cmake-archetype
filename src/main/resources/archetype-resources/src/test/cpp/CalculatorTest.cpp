@@ -1,7 +1,7 @@
-set( $H = '#' )
-#Hinclude <cppunit/extensions/HelperMacros.h>
-#Hinclude "Calculator.hpp"
-#Hinclude <cstring>
+#set( $H = '#' )
+${H}include <cppunit/extensions/HelperMacros.h>
+${H}include "Calculator.hpp"
+${H}include <cstring>
 
 class CalculatorTest : public CppUnit::TestFixture {
 	CPPUNIT_TEST_SUITE(CalculatorTest);

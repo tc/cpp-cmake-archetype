@@ -5,6 +5,7 @@
       <directory></directory>
       <includes>
         <include>CMakeLists.txt</include>
+        <include>.gitignore</include>
       </includes>
     </fileSet>
     <fileSet filtered="false" packaged="false" encoding="UTF-8">

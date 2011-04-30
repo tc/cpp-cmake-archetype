@@ -1,0 +1,11 @@
+Sample Project
+-
+
+C++ build:
+*only dependent is cppunit
+cmake .
+make
+
+Java/Scala build:
+mvn compile
+mvn package
