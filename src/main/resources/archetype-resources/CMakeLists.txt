@@ -31,7 +31,7 @@ install(TARGETS calcexe calc
 
 
 # Unit testing driver
-include_directories("${PROJECT_SOURCE_DIR}/src/main/cpp/work")
+include_directories("${PROJECT_SOURCE_DIR}/src/main/cpp/include")
 set(UnitTests_SRCS src/test/cpp/main.cpp
 		   src/test/cpp/CalculatorTest.cpp)
 
