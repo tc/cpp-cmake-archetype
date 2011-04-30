@@ -1,6 +1,6 @@
 #set( $H = '#' )
 ${H}include <cppunit/extensions/HelperMacros.h>
-${H}include "Calculator.hpp"
+${H}include "Calculator.p"
 ${H}include <cstring>
 
 class CalculatorTest : public CppUnit::TestFixture {

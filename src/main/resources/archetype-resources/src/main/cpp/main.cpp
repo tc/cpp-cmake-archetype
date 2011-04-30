@@ -1,6 +1,6 @@
 #set( $H = '#' )
 ${H}include <iostream>
-${H}include "Calculator.hpp"
+${H}include "Calculator.h"
 using namespace std;
 
 int main(){

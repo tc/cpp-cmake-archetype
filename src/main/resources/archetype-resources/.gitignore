@@ -9,3 +9,4 @@ target
 lib
 bin
 *.class
+*.o
