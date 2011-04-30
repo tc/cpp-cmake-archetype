@@ -6,6 +6,8 @@
       <includes>
         <include>CMakeLists.txt</include>
         <include>.gitignore</include>
+        <include>.svnignore</include>
+        <include>.hgignore</include>
       </includes>
     </fileSet>
     <fileSet filtered="false" packaged="false" encoding="UTF-8">

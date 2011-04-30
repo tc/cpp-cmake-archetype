@@ -2,9 +2,10 @@ CMakeCache.txt
 CPackConfig.cmake
 CPackSourceConfig.cmake
 CTestTestfile.cmake
-Makefile
 cmake_install.cmake
+Makefile
 .DS_Store
 target
 lib
 bin
+*.class
