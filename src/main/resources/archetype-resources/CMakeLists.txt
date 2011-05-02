@@ -16,13 +16,13 @@ find_package(CppUnit REQUIRED)
 
 
 # Main executable
-SET(SOURCES src/main/cpp/Calculator.cpp)
+AUX_SOURCE_DIRECTORY(src/main/cpp SOURCES)
 
 ADD_LIBRARY(calc SHARED ${SOURCES})		
 
 ADD_EXECUTABLE(calcexe src/main/cpp/main.cpp)
 
-target_link_libraries(calcexe calc)
+TARGET_LINK_LIBRARIES(calcexe calc)
 
 install(TARGETS calcexe calc
 	RUNTIME DESTINATION bin
@@ -31,18 +31,18 @@ install(TARGETS calcexe calc
 
 
 # Unit testing driver
-include_directories("${PROJECT_SOURCE_DIR}/src/main/cpp/include")
+INCLUDE_DIRECTORIES("${PROJECT_SOURCE_DIR}/src/main/cpp/include")
 set(UnitTests_SRCS src/test/cpp/main.cpp
 		   src/test/cpp/CalculatorTest.cpp)
 
-add_executable(UnitTester ${UnitTests_SRCS})
+ADD_EXECUTABLE(UnitTester ${UnitTests_SRCS})
 TARGET_LINK_LIBRARIES(UnitTester ${CPPUNIT_LIBRARY}
 				 calc
 				 dl)
 
 # Add coverage options for CI
 if(COVERAGE)
-	set_target_properties(calc calcexe UnitTester PROPERTIES
+	SET_TARGET_PROPERTIES(calc calcexe UnitTester PROPERTIES
 						  COMPILE_FLAGS "-fprofile-arcs -ftest-coverage"
 						  LINK_FLAGS "-coverage")
 endif(COVERAGE)
