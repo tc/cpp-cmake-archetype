@@ -3,13 +3,11 @@ http://github.com/tc/cpp-cmake-archetype
 
 This archetype generates a c++ project with cppunit and cmake.
 
-Dev:
-git clone http://github.com/tc/cpp-cmake-archetype
-mvn install
-
 Run:
-mvn archetype:generate -DgroupId=groupname -DartifactId=artifactname -Dversion=1.0-SNAPSHOT -DarchetypeArtifactId=cpp-cmake-archetype -DarchetypeGroupId=tc -DarchetypeVersion=1.0-SNAPSHOT
+mvn archetype:generate -DgroupId=groupname -DartifactId=artifactname -Dversion=1.0-SNAPSHOT -DarchetypeArtifactId=cpp-cmake-archetype -DarchetypeGroupId=tc -DarchetypeVersion=1.0-SNAPSHOT -DarchetypeRepository=https://github.com/tc/tc-maven-repo/raw/master/releases
 
+Development:
+git clone http://github.com/tc/cpp-cmake-archetype
 
 Deploy:
 mvn -DaltDeploymentRepository=repo::default::file:../../tc-maven-repo/releases clean deploy
