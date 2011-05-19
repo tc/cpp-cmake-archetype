@@ -4,6 +4,7 @@
     <fileSet filtered="false" packaged="false" encoding="UTF-8">
       <directory></directory>
       <includes>
+        <include>README</include>
         <include>CMakeLists.txt</include>
         <include>.gitignore</include>
         <include>.svnignore</include>
